@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrap{
+max-width: 700px; /* Width of coverflow gallery. Should be in px*/
+}
+
+.frame {
+height: 250px; /* height of each item */
+line-height: 250px; /* height of each item */
+overflow: hidden;
+}
+"
+.frame ul li {
+float: left;
+width: 227px; /* width of each item */
+height: 100%;
+"
+
+/* #### CSS that's applied when the window/device width is 860px or less #### */
+@media screen and (max-width: 860px){
+.wrap{
+max-width: 840px;
+}
+}
+
+/* #### CSS that's applied when the window/device width is 480px or less #### */
+@media screen and (max-width: 480px){
+.wrap{
+max-width: 460px;
+}
+}
+
